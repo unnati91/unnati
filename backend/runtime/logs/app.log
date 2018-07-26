@@ -1,0 +1,439 @@
+2018-07-26 16:53:14 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class funson86\blog\Module does not exist' in /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php:422
+Stack trace:
+#0 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(422): ReflectionClass->__construct('funson86\\blog\\M...')
+#1 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(362): yii\di\Container->getDependencies('funson86\\blog\\M...')
+#2 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('funson86\\blog\\M...', Array, Array)
+#3 /var/www/html/project/adminlte/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('funson86\\blog\\M...', Array, Array)
+#4 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->getModule('blog')
+#6 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('blog/default/bl...')
+#7 /var/www/html/project/adminlte/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('blog/default/bl...', Array)
+#8 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/project/adminlte/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2018-07-26 16:53:14 [::1][-][-][info][application] $_COOKIE = [
+    's_fid' => '6AC722FE21DDC2A7-23E0EA283CA668C5'
+    'TOTODEALSFRONTENDSESSID' => 'qe0tf751smtpqnm8scrrgppjm0'
+    'playlist' => '[{\"iSongId\":21,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/21\\/1518780015.mp3\",\"thumb\":\"1521789389.png\",\"trackName\":\"My love\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"dd\"},{\"iSongId\":20,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/20\\/1518779438.mp3\",\"thumb\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/notavailable.jpg\",\"trackName\":\"sun zara123345\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"unnati\"},{\"iSongId\":22,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/22\\/1518780442.mp3\",\"thumb\":\"1521789460.png\",\"trackName\":\"gorgeous girl \",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"pic\"}]'
+    '_frontendTotodeals' => '94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa:2:{i:0;s:18:\"_frontendTotodeals\";i:1;s:48:\"[284,\"8abb2902cea95855ee9315d6d3406c47\",2592000]\";}'
+    'PHPSESSID' => '0kve66drv1curv0r5d8f75bk57'
+    '_identity' => '049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    'TOTODEALSBACKENDSESSID' => '4uokl7fcdj8vsrgalnig4lg6d7'
+    '_backendTotodeals' => '945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a:2:{i:0;s:17:\"_backendTotodeals\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    '_csrf' => '24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project/adminlte/backend/web/role/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 's_fid=6AC722FE21DDC2A7-23E0EA283CA668C5; TOTODEALSFRONTENDSESSID=qe0tf751smtpqnm8scrrgppjm0; playlist=%5B%7B%22iSongId%22%3A21%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F21%5C%2F1518780015.mp3%22%2C%22thumb%22%3A%221521789389.png%22%2C%22trackName%22%3A%22My+love%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22dd%22%7D%2C%7B%22iSongId%22%3A20%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F20%5C%2F1518779438.mp3%22%2C%22thumb%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fnotavailable.jpg%22%2C%22trackName%22%3A%22sun+zara123345%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22unnati%22%7D%2C%7B%22iSongId%22%3A22%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F22%5C%2F1518780442.mp3%22%2C%22thumb%22%3A%221521789460.png%22%2C%22trackName%22%3A%22gorgeous+girl+%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22pic%22%7D%5D; _frontendTotodeals=94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_frontendTotodeals%22%3Bi%3A1%3Bs%3A48%3A%22%5B284%2C%228abb2902cea95855ee9315d6d3406c47%22%2C2592000%5D%22%3B%7D; PHPSESSID=0kve66drv1curv0r5d8f75bk57; _identity=049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; TOTODEALSBACKENDSESSID=4uokl7fcdj8vsrgalnig4lg6d7; _backendTotodeals=945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendTotodeals%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; _csrf=24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/project/adminlte/backend/web/index.php'
+    'REMOTE_PORT' => '45940'
+    'REDIRECT_URL' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'SCRIPT_NAME' => '/project/adminlte/backend/web/index.php'
+    'PHP_SELF' => '/project/adminlte/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532595194.494
+    'REQUEST_TIME' => 1532595194
+]
+2018-07-26 16:53:25 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class funson86\blog\Module does not exist' in /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php:422
+Stack trace:
+#0 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(422): ReflectionClass->__construct('funson86\\blog\\M...')
+#1 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(362): yii\di\Container->getDependencies('funson86\\blog\\M...')
+#2 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('funson86\\blog\\M...', Array, Array)
+#3 /var/www/html/project/adminlte/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('funson86\\blog\\M...', Array, Array)
+#4 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->getModule('blog')
+#6 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('blog/default/bl...')
+#7 /var/www/html/project/adminlte/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('blog/default/bl...', Array)
+#8 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/project/adminlte/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2018-07-26 16:53:25 [::1][-][-][info][application] $_COOKIE = [
+    's_fid' => '6AC722FE21DDC2A7-23E0EA283CA668C5'
+    'TOTODEALSFRONTENDSESSID' => 'qe0tf751smtpqnm8scrrgppjm0'
+    'playlist' => '[{\"iSongId\":21,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/21\\/1518780015.mp3\",\"thumb\":\"1521789389.png\",\"trackName\":\"My love\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"dd\"},{\"iSongId\":20,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/20\\/1518779438.mp3\",\"thumb\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/notavailable.jpg\",\"trackName\":\"sun zara123345\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"unnati\"},{\"iSongId\":22,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/22\\/1518780442.mp3\",\"thumb\":\"1521789460.png\",\"trackName\":\"gorgeous girl \",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"pic\"}]'
+    '_frontendTotodeals' => '94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa:2:{i:0;s:18:\"_frontendTotodeals\";i:1;s:48:\"[284,\"8abb2902cea95855ee9315d6d3406c47\",2592000]\";}'
+    'PHPSESSID' => '0kve66drv1curv0r5d8f75bk57'
+    '_identity' => '049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    'TOTODEALSBACKENDSESSID' => '4uokl7fcdj8vsrgalnig4lg6d7'
+    '_backendTotodeals' => '945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a:2:{i:0;s:17:\"_backendTotodeals\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    '_csrf' => '24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project/adminlte/backend/web/role/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 's_fid=6AC722FE21DDC2A7-23E0EA283CA668C5; TOTODEALSFRONTENDSESSID=qe0tf751smtpqnm8scrrgppjm0; playlist=%5B%7B%22iSongId%22%3A21%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F21%5C%2F1518780015.mp3%22%2C%22thumb%22%3A%221521789389.png%22%2C%22trackName%22%3A%22My+love%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22dd%22%7D%2C%7B%22iSongId%22%3A20%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F20%5C%2F1518779438.mp3%22%2C%22thumb%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fnotavailable.jpg%22%2C%22trackName%22%3A%22sun+zara123345%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22unnati%22%7D%2C%7B%22iSongId%22%3A22%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F22%5C%2F1518780442.mp3%22%2C%22thumb%22%3A%221521789460.png%22%2C%22trackName%22%3A%22gorgeous+girl+%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22pic%22%7D%5D; _frontendTotodeals=94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_frontendTotodeals%22%3Bi%3A1%3Bs%3A48%3A%22%5B284%2C%228abb2902cea95855ee9315d6d3406c47%22%2C2592000%5D%22%3B%7D; PHPSESSID=0kve66drv1curv0r5d8f75bk57; _identity=049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; TOTODEALSBACKENDSESSID=4uokl7fcdj8vsrgalnig4lg6d7; _backendTotodeals=945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendTotodeals%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; _csrf=24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/project/adminlte/backend/web/index.php'
+    'REMOTE_PORT' => '45946'
+    'REDIRECT_URL' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'SCRIPT_NAME' => '/project/adminlte/backend/web/index.php'
+    'PHP_SELF' => '/project/adminlte/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532595205.802
+    'REQUEST_TIME' => 1532595205
+]
+2018-07-26 16:53:27 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class funson86\blog\Module does not exist' in /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php:422
+Stack trace:
+#0 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(422): ReflectionClass->__construct('funson86\\blog\\M...')
+#1 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(362): yii\di\Container->getDependencies('funson86\\blog\\M...')
+#2 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('funson86\\blog\\M...', Array, Array)
+#3 /var/www/html/project/adminlte/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('funson86\\blog\\M...', Array, Array)
+#4 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->getModule('blog')
+#6 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('blog/default/bl...')
+#7 /var/www/html/project/adminlte/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('blog/default/bl...', Array)
+#8 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/project/adminlte/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2018-07-26 16:53:27 [::1][-][-][info][application] $_COOKIE = [
+    's_fid' => '6AC722FE21DDC2A7-23E0EA283CA668C5'
+    'TOTODEALSFRONTENDSESSID' => 'qe0tf751smtpqnm8scrrgppjm0'
+    'playlist' => '[{\"iSongId\":21,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/21\\/1518780015.mp3\",\"thumb\":\"1521789389.png\",\"trackName\":\"My love\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"dd\"},{\"iSongId\":20,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/20\\/1518779438.mp3\",\"thumb\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/notavailable.jpg\",\"trackName\":\"sun zara123345\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"unnati\"},{\"iSongId\":22,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/22\\/1518780442.mp3\",\"thumb\":\"1521789460.png\",\"trackName\":\"gorgeous girl \",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"pic\"}]'
+    '_frontendTotodeals' => '94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa:2:{i:0;s:18:\"_frontendTotodeals\";i:1;s:48:\"[284,\"8abb2902cea95855ee9315d6d3406c47\",2592000]\";}'
+    'PHPSESSID' => '0kve66drv1curv0r5d8f75bk57'
+    '_identity' => '049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    'TOTODEALSBACKENDSESSID' => '4uokl7fcdj8vsrgalnig4lg6d7'
+    '_backendTotodeals' => '945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a:2:{i:0;s:17:\"_backendTotodeals\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    '_csrf' => '24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project/adminlte/backend/web/role/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 's_fid=6AC722FE21DDC2A7-23E0EA283CA668C5; TOTODEALSFRONTENDSESSID=qe0tf751smtpqnm8scrrgppjm0; playlist=%5B%7B%22iSongId%22%3A21%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F21%5C%2F1518780015.mp3%22%2C%22thumb%22%3A%221521789389.png%22%2C%22trackName%22%3A%22My+love%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22dd%22%7D%2C%7B%22iSongId%22%3A20%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F20%5C%2F1518779438.mp3%22%2C%22thumb%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fnotavailable.jpg%22%2C%22trackName%22%3A%22sun+zara123345%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22unnati%22%7D%2C%7B%22iSongId%22%3A22%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F22%5C%2F1518780442.mp3%22%2C%22thumb%22%3A%221521789460.png%22%2C%22trackName%22%3A%22gorgeous+girl+%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22pic%22%7D%5D; _frontendTotodeals=94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_frontendTotodeals%22%3Bi%3A1%3Bs%3A48%3A%22%5B284%2C%228abb2902cea95855ee9315d6d3406c47%22%2C2592000%5D%22%3B%7D; PHPSESSID=0kve66drv1curv0r5d8f75bk57; _identity=049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; TOTODEALSBACKENDSESSID=4uokl7fcdj8vsrgalnig4lg6d7; _backendTotodeals=945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendTotodeals%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; _csrf=24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/project/adminlte/backend/web/index.php'
+    'REMOTE_PORT' => '45948'
+    'REDIRECT_URL' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'SCRIPT_NAME' => '/project/adminlte/backend/web/index.php'
+    'PHP_SELF' => '/project/adminlte/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532595207.638
+    'REQUEST_TIME' => 1532595207
+]
+2018-07-26 16:53:28 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class funson86\blog\Module does not exist' in /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php:422
+Stack trace:
+#0 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(422): ReflectionClass->__construct('funson86\\blog\\M...')
+#1 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(362): yii\di\Container->getDependencies('funson86\\blog\\M...')
+#2 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('funson86\\blog\\M...', Array, Array)
+#3 /var/www/html/project/adminlte/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('funson86\\blog\\M...', Array, Array)
+#4 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->getModule('blog')
+#6 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('blog/default/bl...')
+#7 /var/www/html/project/adminlte/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('blog/default/bl...', Array)
+#8 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/project/adminlte/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2018-07-26 16:53:28 [::1][-][-][info][application] $_COOKIE = [
+    's_fid' => '6AC722FE21DDC2A7-23E0EA283CA668C5'
+    'TOTODEALSFRONTENDSESSID' => 'qe0tf751smtpqnm8scrrgppjm0'
+    'playlist' => '[{\"iSongId\":21,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/21\\/1518780015.mp3\",\"thumb\":\"1521789389.png\",\"trackName\":\"My love\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"dd\"},{\"iSongId\":20,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/20\\/1518779438.mp3\",\"thumb\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/notavailable.jpg\",\"trackName\":\"sun zara123345\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"unnati\"},{\"iSongId\":22,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/22\\/1518780442.mp3\",\"thumb\":\"1521789460.png\",\"trackName\":\"gorgeous girl \",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"pic\"}]'
+    '_frontendTotodeals' => '94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa:2:{i:0;s:18:\"_frontendTotodeals\";i:1;s:48:\"[284,\"8abb2902cea95855ee9315d6d3406c47\",2592000]\";}'
+    'PHPSESSID' => '0kve66drv1curv0r5d8f75bk57'
+    '_identity' => '049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    'TOTODEALSBACKENDSESSID' => '4uokl7fcdj8vsrgalnig4lg6d7'
+    '_backendTotodeals' => '945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a:2:{i:0;s:17:\"_backendTotodeals\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    '_csrf' => '24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project/adminlte/backend/web/role/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 's_fid=6AC722FE21DDC2A7-23E0EA283CA668C5; TOTODEALSFRONTENDSESSID=qe0tf751smtpqnm8scrrgppjm0; playlist=%5B%7B%22iSongId%22%3A21%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F21%5C%2F1518780015.mp3%22%2C%22thumb%22%3A%221521789389.png%22%2C%22trackName%22%3A%22My+love%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22dd%22%7D%2C%7B%22iSongId%22%3A20%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F20%5C%2F1518779438.mp3%22%2C%22thumb%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fnotavailable.jpg%22%2C%22trackName%22%3A%22sun+zara123345%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22unnati%22%7D%2C%7B%22iSongId%22%3A22%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F22%5C%2F1518780442.mp3%22%2C%22thumb%22%3A%221521789460.png%22%2C%22trackName%22%3A%22gorgeous+girl+%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22pic%22%7D%5D; _frontendTotodeals=94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_frontendTotodeals%22%3Bi%3A1%3Bs%3A48%3A%22%5B284%2C%228abb2902cea95855ee9315d6d3406c47%22%2C2592000%5D%22%3B%7D; PHPSESSID=0kve66drv1curv0r5d8f75bk57; _identity=049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; TOTODEALSBACKENDSESSID=4uokl7fcdj8vsrgalnig4lg6d7; _backendTotodeals=945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendTotodeals%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; _csrf=24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/project/adminlte/backend/web/index.php'
+    'REMOTE_PORT' => '45950'
+    'REDIRECT_URL' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'SCRIPT_NAME' => '/project/adminlte/backend/web/index.php'
+    'PHP_SELF' => '/project/adminlte/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532595208.094
+    'REQUEST_TIME' => 1532595208
+]
+2018-07-26 16:53:28 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class funson86\blog\Module does not exist' in /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php:422
+Stack trace:
+#0 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(422): ReflectionClass->__construct('funson86\\blog\\M...')
+#1 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(362): yii\di\Container->getDependencies('funson86\\blog\\M...')
+#2 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('funson86\\blog\\M...', Array, Array)
+#3 /var/www/html/project/adminlte/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('funson86\\blog\\M...', Array, Array)
+#4 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->getModule('blog')
+#6 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('blog/default/bl...')
+#7 /var/www/html/project/adminlte/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('blog/default/bl...', Array)
+#8 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/project/adminlte/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2018-07-26 16:53:28 [::1][-][-][info][application] $_COOKIE = [
+    's_fid' => '6AC722FE21DDC2A7-23E0EA283CA668C5'
+    'TOTODEALSFRONTENDSESSID' => 'qe0tf751smtpqnm8scrrgppjm0'
+    'playlist' => '[{\"iSongId\":21,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/21\\/1518780015.mp3\",\"thumb\":\"1521789389.png\",\"trackName\":\"My love\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"dd\"},{\"iSongId\":20,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/20\\/1518779438.mp3\",\"thumb\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/notavailable.jpg\",\"trackName\":\"sun zara123345\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"unnati\"},{\"iSongId\":22,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/22\\/1518780442.mp3\",\"thumb\":\"1521789460.png\",\"trackName\":\"gorgeous girl \",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"pic\"}]'
+    '_frontendTotodeals' => '94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa:2:{i:0;s:18:\"_frontendTotodeals\";i:1;s:48:\"[284,\"8abb2902cea95855ee9315d6d3406c47\",2592000]\";}'
+    'PHPSESSID' => '0kve66drv1curv0r5d8f75bk57'
+    '_identity' => '049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    'TOTODEALSBACKENDSESSID' => '4uokl7fcdj8vsrgalnig4lg6d7'
+    '_backendTotodeals' => '945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a:2:{i:0;s:17:\"_backendTotodeals\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    '_csrf' => '24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project/adminlte/backend/web/role/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 's_fid=6AC722FE21DDC2A7-23E0EA283CA668C5; TOTODEALSFRONTENDSESSID=qe0tf751smtpqnm8scrrgppjm0; playlist=%5B%7B%22iSongId%22%3A21%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F21%5C%2F1518780015.mp3%22%2C%22thumb%22%3A%221521789389.png%22%2C%22trackName%22%3A%22My+love%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22dd%22%7D%2C%7B%22iSongId%22%3A20%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F20%5C%2F1518779438.mp3%22%2C%22thumb%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fnotavailable.jpg%22%2C%22trackName%22%3A%22sun+zara123345%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22unnati%22%7D%2C%7B%22iSongId%22%3A22%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F22%5C%2F1518780442.mp3%22%2C%22thumb%22%3A%221521789460.png%22%2C%22trackName%22%3A%22gorgeous+girl+%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22pic%22%7D%5D; _frontendTotodeals=94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_frontendTotodeals%22%3Bi%3A1%3Bs%3A48%3A%22%5B284%2C%228abb2902cea95855ee9315d6d3406c47%22%2C2592000%5D%22%3B%7D; PHPSESSID=0kve66drv1curv0r5d8f75bk57; _identity=049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; TOTODEALSBACKENDSESSID=4uokl7fcdj8vsrgalnig4lg6d7; _backendTotodeals=945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendTotodeals%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; _csrf=24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/project/adminlte/backend/web/index.php'
+    'REMOTE_PORT' => '45952'
+    'REDIRECT_URL' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'SCRIPT_NAME' => '/project/adminlte/backend/web/index.php'
+    'PHP_SELF' => '/project/adminlte/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532595208.759
+    'REQUEST_TIME' => 1532595208
+]
+2018-07-26 16:53:29 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class funson86\blog\Module does not exist' in /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php:422
+Stack trace:
+#0 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(422): ReflectionClass->__construct('funson86\\blog\\M...')
+#1 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(362): yii\di\Container->getDependencies('funson86\\blog\\M...')
+#2 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('funson86\\blog\\M...', Array, Array)
+#3 /var/www/html/project/adminlte/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('funson86\\blog\\M...', Array, Array)
+#4 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->getModule('blog')
+#6 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('blog/default/bl...')
+#7 /var/www/html/project/adminlte/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('blog/default/bl...', Array)
+#8 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/project/adminlte/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2018-07-26 16:53:29 [::1][-][-][info][application] $_COOKIE = [
+    's_fid' => '6AC722FE21DDC2A7-23E0EA283CA668C5'
+    'TOTODEALSFRONTENDSESSID' => 'qe0tf751smtpqnm8scrrgppjm0'
+    'playlist' => '[{\"iSongId\":21,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/21\\/1518780015.mp3\",\"thumb\":\"1521789389.png\",\"trackName\":\"My love\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"dd\"},{\"iSongId\":20,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/20\\/1518779438.mp3\",\"thumb\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/notavailable.jpg\",\"trackName\":\"sun zara123345\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"unnati\"},{\"iSongId\":22,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/22\\/1518780442.mp3\",\"thumb\":\"1521789460.png\",\"trackName\":\"gorgeous girl \",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"pic\"}]'
+    '_frontendTotodeals' => '94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa:2:{i:0;s:18:\"_frontendTotodeals\";i:1;s:48:\"[284,\"8abb2902cea95855ee9315d6d3406c47\",2592000]\";}'
+    'PHPSESSID' => '0kve66drv1curv0r5d8f75bk57'
+    '_identity' => '049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    'TOTODEALSBACKENDSESSID' => '4uokl7fcdj8vsrgalnig4lg6d7'
+    '_backendTotodeals' => '945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a:2:{i:0;s:17:\"_backendTotodeals\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    '_csrf' => '24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project/adminlte/backend/web/role/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 's_fid=6AC722FE21DDC2A7-23E0EA283CA668C5; TOTODEALSFRONTENDSESSID=qe0tf751smtpqnm8scrrgppjm0; playlist=%5B%7B%22iSongId%22%3A21%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F21%5C%2F1518780015.mp3%22%2C%22thumb%22%3A%221521789389.png%22%2C%22trackName%22%3A%22My+love%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22dd%22%7D%2C%7B%22iSongId%22%3A20%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F20%5C%2F1518779438.mp3%22%2C%22thumb%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fnotavailable.jpg%22%2C%22trackName%22%3A%22sun+zara123345%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22unnati%22%7D%2C%7B%22iSongId%22%3A22%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F22%5C%2F1518780442.mp3%22%2C%22thumb%22%3A%221521789460.png%22%2C%22trackName%22%3A%22gorgeous+girl+%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22pic%22%7D%5D; _frontendTotodeals=94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_frontendTotodeals%22%3Bi%3A1%3Bs%3A48%3A%22%5B284%2C%228abb2902cea95855ee9315d6d3406c47%22%2C2592000%5D%22%3B%7D; PHPSESSID=0kve66drv1curv0r5d8f75bk57; _identity=049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; TOTODEALSBACKENDSESSID=4uokl7fcdj8vsrgalnig4lg6d7; _backendTotodeals=945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendTotodeals%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; _csrf=24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/project/adminlte/backend/web/index.php'
+    'REMOTE_PORT' => '45954'
+    'REDIRECT_URL' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'SCRIPT_NAME' => '/project/adminlte/backend/web/index.php'
+    'PHP_SELF' => '/project/adminlte/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532595209.048
+    'REQUEST_TIME' => 1532595209
+]
+2018-07-26 16:53:34 [::1][-][-][error][ReflectionException] exception 'ReflectionException' with message 'Class funson86\blog\Module does not exist' in /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php:422
+Stack trace:
+#0 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(422): ReflectionClass->__construct('funson86\\blog\\M...')
+#1 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(362): yii\di\Container->getDependencies('funson86\\blog\\M...')
+#2 /var/www/html/project/adminlte/vendor/yiisoft/yii2/di/Container.php(154): yii\di\Container->build('funson86\\blog\\M...', Array, Array)
+#3 /var/www/html/project/adminlte/vendor/yiisoft/yii2/BaseYii.php(344): yii\di\Container->get('funson86\\blog\\M...', Array, Array)
+#4 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(353): yii\BaseYii::createObject(Array, Array)
+#5 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(512): yii\base\Module->getModule('blog')
+#6 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Module.php(448): yii\base\Module->createController('blog/default/bl...')
+#7 /var/www/html/project/adminlte/vendor/yiisoft/yii2/web/Application.php(100): yii\base\Module->runAction('blog/default/bl...', Array)
+#8 /var/www/html/project/adminlte/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /var/www/html/project/adminlte/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2018-07-26 16:53:34 [::1][-][-][info][application] $_COOKIE = [
+    's_fid' => '6AC722FE21DDC2A7-23E0EA283CA668C5'
+    'TOTODEALSFRONTENDSESSID' => 'qe0tf751smtpqnm8scrrgppjm0'
+    'playlist' => '[{\"iSongId\":21,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/21\\/1518780015.mp3\",\"thumb\":\"1521789389.png\",\"trackName\":\"My love\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"dd\"},{\"iSongId\":20,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/20\\/1518779438.mp3\",\"thumb\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/notavailable.jpg\",\"trackName\":\"sun zara123345\",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"unnati\"},{\"iSongId\":22,\"file\":\"http:\\/\\/localhost\\/project\\/music_app\\/code\\/uploads\\/songs\\/22\\/1518780442.mp3\",\"thumb\":\"1521789460.png\",\"trackName\":\"gorgeous girl \",\"trackArtist\":\"a12345\",\"autoplay\":\"autoplay\",\"trackAlbum\":\"pic\"}]'
+    '_frontendTotodeals' => '94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa:2:{i:0;s:18:\"_frontendTotodeals\";i:1;s:48:\"[284,\"8abb2902cea95855ee9315d6d3406c47\",2592000]\";}'
+    'PHPSESSID' => '0kve66drv1curv0r5d8f75bk57'
+    '_identity' => '049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    'TOTODEALSBACKENDSESSID' => '4uokl7fcdj8vsrgalnig4lg6d7'
+    '_backendTotodeals' => '945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a:2:{i:0;s:17:\"_backendTotodeals\";i:1;s:46:\"[1,\"PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG\",2592000]\";}'
+    '_csrf' => '24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project/adminlte/backend/web/role/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => 's_fid=6AC722FE21DDC2A7-23E0EA283CA668C5; TOTODEALSFRONTENDSESSID=qe0tf751smtpqnm8scrrgppjm0; playlist=%5B%7B%22iSongId%22%3A21%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F21%5C%2F1518780015.mp3%22%2C%22thumb%22%3A%221521789389.png%22%2C%22trackName%22%3A%22My+love%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22dd%22%7D%2C%7B%22iSongId%22%3A20%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F20%5C%2F1518779438.mp3%22%2C%22thumb%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fnotavailable.jpg%22%2C%22trackName%22%3A%22sun+zara123345%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22unnati%22%7D%2C%7B%22iSongId%22%3A22%2C%22file%22%3A%22http%3A%5C%2F%5C%2Flocalhost%5C%2Fproject%5C%2Fmusic_app%5C%2Fcode%5C%2Fuploads%5C%2Fsongs%5C%2F22%5C%2F1518780442.mp3%22%2C%22thumb%22%3A%221521789460.png%22%2C%22trackName%22%3A%22gorgeous+girl+%22%2C%22trackArtist%22%3A%22a12345%22%2C%22autoplay%22%3A%22autoplay%22%2C%22trackAlbum%22%3A%22pic%22%7D%5D; _frontendTotodeals=94f6df9b26b2be781bf44f8f075c9a85d9a7cc5ede4ce9d313e79def3e7136afa%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_frontendTotodeals%22%3Bi%3A1%3Bs%3A48%3A%22%5B284%2C%228abb2902cea95855ee9315d6d3406c47%22%2C2592000%5D%22%3B%7D; PHPSESSID=0kve66drv1curv0r5d8f75bk57; _identity=049d35850288d6265cafc185e46a447fb242c326f30ed0788394673e25afc986a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; TOTODEALSBACKENDSESSID=4uokl7fcdj8vsrgalnig4lg6d7; _backendTotodeals=945d3ec1f85e06ab9ed277edd9cf64c820af210c54bd706d5f4d84df6cf82269a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_backendTotodeals%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22PeDzmq43kZt2ppnOnq40-IVpfSyCBSkG%22%2C2592000%5D%22%3B%7D; _csrf=24b67f1422afe7e41d70194614bf81cc84e0d038b3e4d2e8ec584acdbef0db0fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFm-hSRvBzej7wfhVsBrRLyC1pmuZwnN%22%3B%7D'
+    'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.18 (Ubuntu) Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Ubuntu)'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/var/www/html'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/var/www/html'
+    'SERVER_ADMIN' => 'webmaster@localhost'
+    'SCRIPT_FILENAME' => '/var/www/html/project/adminlte/backend/web/index.php'
+    'REMOTE_PORT' => '45956'
+    'REDIRECT_URL' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/project/adminlte/backend/web/blog/default/blog-post'
+    'SCRIPT_NAME' => '/project/adminlte/backend/web/index.php'
+    'PHP_SELF' => '/project/adminlte/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1532595214.082
+    'REQUEST_TIME' => 1532595214
+]
